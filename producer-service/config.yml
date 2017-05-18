@@ -1,0 +1,16 @@
+natsUrl: nats://localhost:4222
+clusterId: test-cluster
+clientId: TestProducer
+
+server:
+  applicationConnectors:
+    - type: http
+      port: 8080
+  adminConnectors:
+    - type: http
+      port: 8081
+
+logging:
+  level: INFO
+  loggers:
+    eu.hammarback: DEBUG
